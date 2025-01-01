@@ -4,10 +4,10 @@ const Course = require("../Model/Courseschema"); // Ensure the Course model is c
 exports.enrollUser = async (req, res) => {
   console.log("inside enrolluser api");
 
-  const { CourseId } = req.params; // Extract CourseId from URL params
-  const { Name, Email } = req.body; // Extract Name and Email from request body
+  const{ CourseId } = req.params; 
 
-  console.log("Received CourseId from params:", CourseId); // Debugging
+  const { Name, Email} = req.body; // Extract Name and Email from request body
+
 
   try {
     // Check if CourseId is provided
